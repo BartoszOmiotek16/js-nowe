@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="pl-PL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bartosz Omiotek 113969</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="topnav">
+   
+    
+    <a href="home.html" class="active"><img src="logo.png" alt="logo"></a>
+ 
+    <!-- menu burger -->
+    <div id="myLinks">
+      <a href="home.html">Home</a>
+      <a href="hasło.html">Bezpieczne hasło</a>
+      <a href="waluta.html">Kursy walut</a>
+      <a href="pogoda.html">Prognoza pogody</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <script>
+      function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+  </div>
+
+<div class="container" role="main">
+      <div class="headerhaslo">
+          <p id="ramka2">Bezpieczne hasło</p>
+      </div>
+      <div class="content">
+          <h1>Zasady tworzenia dobrego hasła</h1>
+          <table>
+			
+            <th>Jakość hasła</th> <th>Opis</th>
+            <tr>
+              <td> BARDZO DOBRE</td> <td>długość 7 znaków i więcej, zawiera przynajmniej jedną cyfrę oraz zawiera przynajmniej jeden znak specjalny</td>
+            </tr>
+            <tr>
+              <td>DOBRE</td> <td>długość 7 znaków i więcej, zawiera przynajmniej jedną cyfrę</td>
+            </tr>
+            <tr>
+              <td>ŚREDNIE</td> <td>długość 4 do 6 znaków, zawiera przynajmniej jedną cyfrę</td>
+            </tr>
+            <tr>
+              <td>SŁABE</td> <td>inne przypadki</td>
+            </tr>
+          </table> 
+          <h1>Weryfikacja stworzonegoo hasła</h1>
+          <div id="haslo">
+            <p>Twoje hasło: <input type="password" id="passwd"><input type="submit" value="Sprawdź" onclick="pseudoregex()"></p>
+            <p id="wynik" style="text-align: center; font-size: larger;"> </p>
+            <script src="index.js"></script>
+          </div>
+      </div>
+    </div>
+    <div id="footer" class="stopka">
+    <h5>Bartosz Omiotek Gr: 6, Nr indeksu: 113969</h5>
+    </div>   
+    
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="pl-PL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bartosz Omiotek 113969</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="topnav">
+   
+    
+    <a href="home.html" class="active"><img src="logo.png" alt="logo"></a>
+ 
+    <!-- burger menu -->
+    <div id="myLinks">
+      <a href="home.html">Home</a>
+      <a href="hasło.html">Bezpieczne hasło</a>
+      <a href="waluta.html">Kursy walut</a>
+      <a href="pogoda.html">Prognoza pogody</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <script>
+      function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+  </div>
+  
+<div class="container" role="main">
+      <div class="headerwaluty">
+          <p id="ramka2">Kursy walut</p>
+      </div>
+      <div class="content">
+        
+          <div id="exchange-rate" class="currency-container">
+            <h1>Kursy Walut NBP</h1>
+            <div id="currency-select" class="currency-select">
+                <label for="currency">Wybierz walutę:</label>
+                <select id="currency">
+
+                </select>
+            </div>
+            <button onclick="getExchangeRates()">Pobierz kursy</button>
+            <div id="result" class="currency-result"></div>
+        </div>
+    
+        <script src="scriptapi.js"></script>
+      </div>
+    </div>
+      <div id="footer" class="stopka">
+      <h5>Bartosz Omiotek Gr: 6, Nr indeksu: 113969</h5>
+      </div>   
+        
+    
+
+</body>
+</html>

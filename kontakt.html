@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="pl-PL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bartosz Omiotek 113969</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="topnav">
+   
+    
+    <a href="home.html" class="active"><img src="logo.png" alt="logo"></a>
+ 
+    <!-- burger menu -->
+    <div id="myLinks">
+      <a href="home.html">Home</a>
+      <a href="hasło.html">Bezpieczne hasło</a>
+      <a href="waluta.html">Kursy walut</a>
+      <a href="pogoda.html">Prognoza pogody</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <script>
+      function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+  </div>
+
+<div class="container" role="main">
+      <div class="headerkontakt">
+          <p id="ramka2">Kontakt</p>
+      </div>
+      <div class="content">
+          <h1>Dane kontaktowe</h1>
+          <div class="mail">
+          <a href="mailto:113969@student.san.edu.pl"><i class="fa fa-envelope" style="font-size:20px;color:#5D3587"></i> Email: 113969@student.san.edu.pl</a>
+          </div>
+          <br><br><br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.2929214059122!2d19.46455137529491!3d51.7642519919088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcb29f8d60daf%3A0xbd2787935df61720!2sKampus%20A%20Spo%C5%82ecznej%20Akademii%20Nauk%20w%20%C5%81odzi!5e0!3m2!1spl!2spl!4v1703685465719!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+      <div id="footer" class="stopka">
+      <h5>Bartosz Omiotek Gr: 6, Nr indeksu: 113969</h5>
+      </div>   
+        
+    
+
+</body>
+</html>

@@ -1,0 +1,403 @@
+
+body {
+height: 100%;
+margin:0px;
+padding:0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* menu burger oraz logo */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  width: auto; 
+  height: 15%;
+  border-bottom: 4px solid #392467 ;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: transparent;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 30px;
+}
+
+.topnav a.icon .fa{
+  font-size: 35px;
+}
+
+.topnav a.icon:hover {
+  background-color: transparent;
+  color: #392467 ;
+  transition:0.5s!important;
+	transform: scale(1.30) !important;
+}
+
+.topnav a:hover {
+  background-color: #424242;
+  color: white;
+}
+
+.active {
+  background-color: #000000 !important;
+  color: white;
+}
+
+.topnav img{
+  max-width: 190px;
+}
+
+/*kontener główny*/
+.container {
+  height: 70%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  max-width: 100% !important;
+}
+
+.container div {
+  box-sizing: border-box;
+  min-width: 150px;
+}
+
+/*baner strona główna*/
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 40% !important;
+}
+
+/*baner strona główna funkcja do wersji mobilnej*/
+@media all and (max-width: 600px) {
+.carousel-inner img {
+width: 100%;
+height: 50vh;
+object-fit: cover;
+}
+}
+@media all and (max-width: 600px) {
+.carousel-caption {
+position: absolute;
+right: 15%;
+bottom: 20% !important;
+}
+}
+
+/*banery podstron*/
+.headerkontakt {
+  width: 100%;
+  min-height: 150px;
+  background-image: url(bg_kontakt.jpg);
+  background-repeat: no-repeat;
+}
+
+.headerhaslo {
+  width: 100%;
+  min-height: 150px;
+  background-image: url(bg_haslo.jpg);
+  background-repeat: no-repeat;
+}
+
+.headerwaluty {
+  width: 100%;
+  min-height: 150px;
+  background-image: url(bg_waluty.jpg);
+  background-repeat: no-repeat;
+}
+
+.headerpogoda {
+  width: 100%;
+  min-height: 150px;
+  background-image: url(bg_pogoda.jpg);
+  background-repeat: no-repeat;
+}
+
+/*div do kontentu na stronie*/
+.content {
+  width: 100%;
+  float: left;
+  padding-left: 5%; 
+  padding-right: 5%;
+}
+
+/*ramka baneru strona główna*/
+#ramka {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.56);
+    text-align: center;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 3em;
+    border: 2px;
+    border-style: solid;
+    padding: 1%;
+}
+/*ramka baneru strona główna funkcja do wersji mobilnej*/
+@media all and (max-width: 600px) {
+  #ramka {
+  color: whitesmoke;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 30px;
+  border: 1px;
+  border-style: solid;
+  padding: 1%;
+  
+  }
+}
+
+/*ramka baneru podstrony*/
+#ramka2 {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.56);
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 22%;
+  margin-right: 22%;
+  font-size: 3em;
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+}
+
+/*ramka baneru strona główna funkcja do wersji mobilnej*/
+@media all and (max-width: 600px) {
+  #ramka2 {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 30px;
+  }
+}
+
+/*stopka*/
+#footer{
+   height: 15% !important;
+   padding-top: 0px;
+   text-align: center;
+   color: #ffffff;
+   text-decoration: none;
+   border-top-width: 1px;
+   border-style: solid;
+   background-color: #000000;
+   border-color: #000000;
+   font-size: 14px;
+}
+
+#footerhome{
+  height: 68px !important;
+    padding-top: 25px;
+   text-align: center;
+   color: #ffffff;
+   text-decoration: none;
+   border-top-width: 1px;
+   border-style: solid;
+   background-color: #000000;
+   border-color: #000000;
+   font-size: 14px !important;
+}
+
+#footerhome h5{
+  font-size: 0.83em !important;
+}
+
+/*tabela hasła*/
+ table {
+	border: 4px solid #5D3587;
+	width: 100%;
+}
+
+th {
+	background-color: #5D3587;
+  color: white;
+	border: 2px solid #000000;
+
+}
+
+td {
+	border: 2px solid;
+}
+
+/*email kontakt*/
+.mail a{
+  font-size: 20px;
+}
+
+/*css do api NBP*/
+.currency-container {
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 24px -7px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 5px 5px 24px -7px rgba(66, 68, 90, 1);
+  box-shadow: 5px 5px 24px -7px rgba(66, 68, 90, 1);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.currency-select label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.currency-select select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.currency-result {
+  margin-top: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+/*css do api pogodowego*/
+.pogoda-container {
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 24px -7px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 5px 5px 24px -7px rgba(66, 68, 90, 1);
+  box-shadow: 5px 5px 24px -7px rgba(66, 68, 90, 1);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pogoda-container button{
+  margin-top: 20px !important;
+ }
+
+.pogoda-container h1{
+  margin-bottom: 20px !important;
+ }
+
+
+
+/*pozostałe stylowanie*/
+
+button {
+  background-color: #5D3587;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #392467;
+  transition:0.5s!important;
+	transform: scale(1.10) !important;
+}
+
+a {
+  color: #333;
+}
+
+h1{
+  color: #333;
+  font-size: 32px;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  margin: 0;
+}
+
+@media all and (max-width: 600px) {
+  h1{ 
+    font-size: 24px !important;
+  }
+}
+
+h2{
+  color:#333;
+  font-size: 16px;
+  padding: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+p{
+  color: #424242;
+  font-size: 15px;
+  line-height: 1.6em;
+  padding-bottom: 2%;
+}
+
+input[type="submit" i] {
+  background-color: #5D3587;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #5D3587;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+@media all and (max-width: 600px) {
+  input[type="submit" i] {
+    margin-left: 0px;
+  }
+}
+
+input[type="submit" i]:hover {
+  background-color: #392467;
+  transition:0.5s!important;
+	transform: scale(1.10) !important;
+}
+
+input[type="password" i] {
+  background-color: white;
+  color: #333;;
+  padding: 9px 20px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+ #haslo p{
+  font-size: 20px;
+ }
+
+
+
+
